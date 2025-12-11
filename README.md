@@ -393,11 +393,11 @@ $> ./tsp < square.txt
 
 ### 📋 **Ön Gereksinimler**
 
-<img align="right" alt="Algorithm Animation" width="300" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmM0cG80aTJ4aDdrMXg5aml4bjhzcHJvdDNydHVpbHJkbXBrZzM4NyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8nTNSAyWSgfmpFZGkp/giphy.gif">
-
 ![GCC](https://img.shields.io/badge/GCC-Required-red?style=flat-square&logo=gnu&logoColor=white)
 ![Make](https://img.shields.io/badge/CC-Optional-blue?style=flat-square&logo=gnu&logoColor=white)
 ![Math](https://img.shields.io/badge/Math%20Library-libm-green?style=flat-square)
+
+<img align="right" alt="Algorithm Animation" width="300" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmM0cG80aTJ4aDdrMXg5aml4bjhzcHJvdDNydHVpbHJkbXBrZzM4NyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8nTNSAyWSgfmpFZGkp/giphy.gif">
 
 - **C Compiler**: `gcc` veya `cc`
 - **Unix-like System**: Linux, macOS, WSL
@@ -558,3 +558,4 @@ backtrack();
 **⭐ Eğer bu proje işinize yaradıysa, repo'ya star vermeyi unutmayın!**
 
 </div>
+
