@@ -1,0 +1,44 @@
+=============================================================================
+
+POWERSET
+
+=============================================================================
+
+Argüman olarak bir n tamsayısı ve ardından bir s tamsayı kümesi alan
+bir program yazın. Programınız, elemanlarının toplamı n olan s'in
+tüm alt kümelerini ekrana yazdırmalıdır.
+Boş küme, her kümenin bir alt kümesidir.
+
+Sıralama Kuralı: Satırların (bulunan alt kümelerin) hangi sırada
+ekrana yazıldığı önemli değildir; ANCAK bir alt küme içindeki
+elemanların sırası önemlidir. Bu sıra, başlangıçtaki s kümesindeki
+sırayla eşleşmelidir. Bu kural sayesinde tekrarlara sahip olmazsınız.
+Örneğin: '1 2' geçerliyken '2 1' olmamalıdır.
+
+=============================================================================
+
+Örnek olarak bu şekilde çalışmalıdır:
+
+$> ./powerset 3 1 0 2 4 5 3 | cat -e
+3$
+0 3$
+1 2$
+1 0 2$
+
+$> ./powerset 12 5 2 1 8 4 3 7 11 | cat -e
+8 4$
+1 11$
+1 4 7$
+1 8 3$
+2 3 7$
+5 7$
+5 4 3$
+5 2 1 4$
+
+$> ./power_set1 0 1 -1 | cat -e
+$
+1 -1$
+
+$> ./power_set1 7 3 8 2 | cat -e
+
+=============================================================================

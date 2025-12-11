@@ -1,0 +1,36 @@
+=============================================================================
+
+RIP (Parantezleri Temizle)
+
+=============================================================================
+
+Program argüman olarak sadece parantezlerden oluşan bir string alacaktır.
+Eğer parantezler dengesizse (örneğin ()) ), programınız ifadenin dengeli
+olması için minimum sayıda parantezi kaldırmalıdır.
+
+Tüm olası çözümleri yazdırmalısınız. Çözümlerin sırası önemli değildir.
+
+=============================================================================
+
+Örnek olarak bu şekilde çalışmalıdır:
+
+$> ./rip '( ( )' | cat -e
+_ ( ) $
+( _ ) $
+
+$> ./rip '( ( ( ) ( ) ( ) ) ( ) )' | cat -e
+( ( ( ) ( ) ( ) ) ( ) ) $
+
+$> ./rip '( ) ( ) ) ( )' | cat -e
+( ) ( ) _ ( ) $
+( ) ( _ ) ( ) $
+( _ ( ) ) ( ) $
+
+$> ./rip '( ( ) ( ( ) (' | cat -e
+( ( ) _ _ ) _ $
+( _ ) ( _ ) _ $
+( _ ) _ ( ) _ $
+_ ( ) ( _ ) _ $
+_ ( ) _ ( ) _ $
+
+=============================================================================

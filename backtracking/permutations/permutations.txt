@@ -1,0 +1,34 @@
+=============================================================================
+
+PERMUTATIONS
+
+=============================================================================
+
+Permutations problemi, verilen bir karakter dizisindeki (string) harflerin
+yerlerini değiştirerek elde edilebilecek tüm olası sıralamaları bulmayı içerir.
+
+EN ÖNEMLİ KURAL: Çıktılar Alfabetik Sırada (Sözlük Sırası) olmalıdır.
+
+=============================================================================
+
+Örnek olarak bu şekilde çalışmalıdır:
+
+$> ./permutations a | cat -e
+a$
+
+$> ./permutations ab | cat -e
+ab$
+ba$
+
+$> ./permutations abc | cat -e
+abc$
+acb$
+bac$
+bca$
+cab$
+cba$
+
+(Not: Eğer girdi 'cba' olsa bile, programın çıktısı alfabetik sıraya sadık
+kalarak yine 'abc' ile başlamalıdır. Bu yüzden sıralama (sort) önemlidir.)
+
+=============================================================================

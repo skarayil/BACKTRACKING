@@ -1,0 +1,67 @@
+=============================================================================
+
+TSP (Gezgin Satıcı Problemi)
+
+=============================================================================
+
+Bu problemden "gezgin satıcı problemi" (traveling salesman problem) olarak
+bahseden ilk yayın, Julia Robinson tarafından yazılan 1949 tarihli
+RAND Corporation raporu olan "On the Hamiltonian game'dir.
+
+Problemi şu şekilde tanımlamaktadır:
+
+"Bu notun amacı, gezgin satıcı problemiyle ilgili bir sorunu çözmek için
+bir yöntem sunmaktır. Orijinal problemin bir tanımını yapmak faydalı görünüyor.
+Bir formülasyon şöyledir: Washington'dan başlayan, tüm eyalet başkentlerini ziyaret
+eden ve ardından Washington'a dönen bir satıcı için en kısa rotayı bulmak.
+
+Daha genel olarak, düzlemde verilen n noktayı içeren en kısa KAPALI EĞRİYİ (döngüyü) bulmak."
+
+Örneğin aşağıdaki şehir seti ile:
+0, 0
+1, 0
+2, 0
+0, 1
+1, 1
+2, 1
+1, 2
+2, 2
+
+Bu set şu şekilde gösterilebilir:
++ + +
++ + +
+  + +
+
+En kısa yol şöyledir:
+ _____
+|__   |
+   |__|
+
+Bu yüzden bu yolun uzunluğunu şu şekilde yazdırmalısınız: 8.00
+
+=============================================================================
+
+Standart girdiden (stdin) '%f, %f\n' formatında bir şehir koordinatları setini
+okuyan ve bu şehirlerin tümünü içeren mümkün olan en kısa yolun uzunluğunu
+'%.2f' formatında yazdıran bir program yazın.
+
+Programınız 11 şehirden fazlasıyla test edilmeyecektir.
+
+Bu dizinde, bu egzersizin tüm sıkıcı kısımlarını içeren tsp.c dosyasını ve
+programınızı test etmenize yardımcı olacak örnek dosyaları bulacaksınız.
+
+İpucu: sqrtf fonksiyonunu kullanmak için derleme komutunuzun sonuna -lm ekleyin.
+
+=============================================================================
+
+Örnek olarak bu şekilde çalışmalıdır:
+
+$> cat square.txt
+1, 1
+0, 1
+1, 0
+0, 0
+$> ./tsp < square.txt | cat -e
+4.00$
+
+=============================================================================

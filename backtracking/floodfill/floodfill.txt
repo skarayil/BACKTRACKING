@@ -1,0 +1,36 @@
+=============================================================================
+
+FLOODFILL
+
+=============================================================================
+
+Flood Fill algoritması, çok boyutlu bir dizide (genellikle 2D harita), 
+belirli bir noktadan başlayarak, o nokta ile aynı değere (renge/karaktere) 
+sahip olan tüm bağlantılı alanları değiştirmeyi hedefler.
+
+Genellikle "Boyama Kovası" aracı olarak bilinir.
+
+EN ÖNEMLİ KURAL: Harita sınırlarının dışına çıkmamak ve sadece başlangıç 
+noktasındaki karakter ile aynı olan komşu (sağ, sol, yukarı, aşağı) 
+karakterleri değiştirmek.
+
+Genellikle hedef karakter 'F' olarak istenir.
+
+=============================================================================
+
+Örnek olarak bu şekilde çalışmalıdır:
+
+Girdi Haritası (Başlangıç noktası: (1, 1) -> yani ortadaki '0'):
+11111
+10001
+10101
+
+Çıktı Haritası:
+11111
+1FFF1
+1F1F1
+
+(Not: (1,1) koordinatındaki '0' ve ona bağlı olan tüm '0'lar 'F' oldu. 
+Ancak sağ alttaki '0' diğerlerinden '1' duvarı ile ayrıldığı için değişmedi.)
+
+=============================================================================
